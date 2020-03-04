@@ -7,4 +7,4 @@ FROM (SELECT teachers.name AS teacher, cohorts.name AS cohort, assistance_reques
   WHERE cohorts.name = 'JUL02'
   ORDER BY teacher) 
   teachers
-GROUP BY teacher
+GROUP BY teacher, cohort
